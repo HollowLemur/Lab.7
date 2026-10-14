@@ -1,0 +1,20 @@
+{
+  "name": "defi-lab7-vault",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compile": "node scripts/compile.js",
+    "check:sepolia": "node --env-file=.env scripts/check-sepolia.js",
+    "check:balances": "node --env-file=.env scripts/check-balances.js",
+    "deploy": "node --env-file=.env scripts/deploy.js",
+    "lab": "node --env-file=.env scripts/lifecycle.js",
+    "report": "node scripts/report.js"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "5.0.2",
+    "ethers": "6.17.0"
+  },
+  "devDependencies": {
+    "solc": "0.8.34"
+  }
+}
